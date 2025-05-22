@@ -2,7 +2,9 @@ function anagramChecker(word1, word2) {
   document.getElementById('results-text').classList.add('hidden');
   document.getElementById('results-forgot').classList.add('hidden');
 
-
+	if (word1.replace(/\s+/g, '') === word2.replace(/\s+/g, '')) {
+  	return
+  }
 
 	if (word1.toLowerCase() === word2.toLowerCase()) {
     document.getElementById('results-idiot').classList.remove('hidden');
