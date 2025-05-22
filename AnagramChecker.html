@@ -1,0 +1,40 @@
+<body class="bg-gray-800">
+  <section id="title-description" class="text-center">
+    <h2 class="text-white text-2xl font-bold">Welcome to the anagram checker!</h2>
+    <p class="text-white">Enter two words and we'll tell you if they're anagrams!</p>
+  </section>
+  
+  <section id="word-inputs" class="flex justify-around pt-12">
+    <input type="text" id="word1" placeholder="Enter a word here..." pattern="[A-Za-z]+">
+    <p class="text-2xl text-white">
+    ->
+    </p>
+    <input type="text" id="word2" placeholder="And one here..." pattern="[A-Za-z]+">
+  </section>
+  
+  <section id="anagram-checker" class="flex justify-center pt-8">
+    <button id="anagram-checker-button"               onclick="anagramChecker(document.getElementById('word1').value, document.getElementById('word2').value)"
+ class="text-white bg-gray-500 rounded-lg p-2">
+      Click here to check!
+    </button>
+  </section>
+  
+  <section id="results" class="flex text-white text-2xl justify-around pt-8">
+    <p id="results-text" class="hidden">The words
+    <span id="results-are" class="hidden font-bold text-green-500">ARE</span>
+    <span id="results-arent" class="hidden font-bold text-red-500">ARE NOT</span>
+    anagrams.</p>
+  </section>
+  
+  <section id="results-idiot" class="hidden text-white text-2xl flex justify-center pt-4">
+    <h2>
+    They're the same word, idiot...
+    </h2>
+  </section>
+  
+    <section id="results-forgot" class="hidden text-white text-2xl flex justify-center pt-4">
+    <h2>
+      Looks like you forgot a word!
+    </h2>
+  </section>
+</body>
