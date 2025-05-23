@@ -2,7 +2,7 @@ function anagramChecker(word1, word2) {
   document.getElementById('results-text').classList.add('hidden');
   document.getElementById('results-forgot').classList.add('hidden');
 
-	if (word1.replace(/\s+/g, '') === word2.replace(/\s+/g, '')) {
+	if (word1.replace(/\s+/g, '') === word2.replace(/\s+/g, '') && word1.replace(/\s+/g, '').length < 1 && word2.replace(/\s+/g, '').length < 1) {
   	return
   }
 
